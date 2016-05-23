@@ -10,6 +10,7 @@ public class OWater extends Obstacle {
 
     public OWater(float length, float height) {
         super(length, height);
+        oname = "OWall";
     }
 
     public void doIt(Animal a) {

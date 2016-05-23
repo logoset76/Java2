@@ -9,6 +9,7 @@ import Animals.Jumpable;
 public class OWall extends Obstacle {
     public OWall(float length, float height) {
         super(length, height);
+        oname = "OWall";
     }
 
     @Override

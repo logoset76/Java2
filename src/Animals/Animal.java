@@ -24,11 +24,13 @@ public abstract class Animal {
         onDistance = true;
     }
 
-  /*  public void info() {
+    public void info() {
         System.out.println("type: " + type + " name: " + name);
     }
-   */
+
     public void printWin() {
+
+        if (onDistance)
         System.out.println(type + " " + name + " WIN!");
     }
 

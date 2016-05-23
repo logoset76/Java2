@@ -9,6 +9,7 @@ public abstract class Obstacle {
 
     float length;
     float height;
+    protected String oname;
 
     public Obstacle(float length, float height) {
         this.length = length;
@@ -16,5 +17,10 @@ public abstract class Obstacle {
     }
 
     public abstract void doIt(Animal a);
+
+    public void infoObstacle(){
+
+        System.out.println(oname);
+    }
 
 }

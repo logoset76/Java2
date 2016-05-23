@@ -5,7 +5,7 @@ import Animals.Animal;
  * Created by L on 20.05.2016.
  */
 public class Team {
-    // private int n = 4;
+    // private final int n = 4;
     private String nameTeam;
     private Animal[] team;
 
@@ -15,38 +15,51 @@ public class Team {
         this.team = team;
     }
 
+    public int getLength(){
 
+        return team.length;
+
+    }
+
+    public  Animal getAnimal (int i){
+
+        return (team[i]);
+    }
     public void teamInfo() {
 
         System.out.println("===========================");
-        System.out.println("Team: " + nameTeam + '\n' + team);
+        System.out.println("Team: " + nameTeam);
 
         for (int i = 0; i < team.length; i++) {
-            System.out.println(team[i]);
+            team[i].info();
         }
 
     }
+
+               /*
     public void doTeam() {
 
 
         for (int i = 0; i < team.length; i++) {
             for (int j = 0; j < OCourse.ocourse.length; j++) {
                 System.out.println("===========================");
-                System.out.println(OCourse.ocourse[j]);
+                OCourse.ocourse[j].infoObstacle();
                 OCourse.ocourse[j].doIt(team[i]);
-                if(!team[i].isOnDistance()) break;
+                if (!team[i].isOnDistance()) break;
             }
         }
 
     }
-
-
+              */
 
     public void memberMakeFinishInfo() {
         System.out.println("===========================");
+
         for (int i = 0; i < team.length; i++) {
-            if (team[i].isOnDistance()) team[i].printWin();
+            team[i].printWin();
         }
+
+
         System.out.println("===========================");
     }
 

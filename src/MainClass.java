@@ -18,7 +18,7 @@ public class MainClass {
 
 
         team1.teamInfo();      // Команда ИНФО
-        team1.doTeam();        //  Отправка на Полосу препятствий
+        ocourse.doOCourse(team1);        //  Отправка на Полосу препятствий
         team1.memberMakeFinishInfo();    //    Смотрим победителя
 
 

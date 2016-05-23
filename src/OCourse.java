@@ -7,12 +7,28 @@ import Obstacles.Obstacle;
 public class OCourse {
 
 
-    public static Obstacle[] ocourse;
+    private Obstacle[] ocourse;
 
     public OCourse(Obstacle[] ocourse) {
         this.ocourse = ocourse;
 
     }
+
+      public void doOCourse(Team t){
+
+          for (int i = 0; i < t.getLength(); i++) {
+              for (int j = 0; j < ocourse.length; j++) {
+                  System.out.println("===========================");
+                  ocourse[j].infoObstacle();
+                  ocourse[j].doIt(t.getAnimal(i));
+                  if (!t.getAnimal(i).isOnDistance()) break;
+              }
+          }
+
+
+      }
+
+
 
 }
 

@@ -8,6 +8,7 @@ import Animals.Animal;
 public class OCross extends Obstacle {
     public OCross(float length, float height) {
         super(length, height);
+        oname = "OCross";
     }
 
     @Override
